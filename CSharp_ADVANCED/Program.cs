@@ -58,6 +58,22 @@ public class Program
 
 		//Console.WriteLine(res);
 
+		Func<int, int, int> func2 = delegate (int rangeInit, int rangeEnd){
+
+			int sum = 1;
+
+			for (int i = rangeInit; i <= rangeEnd; i++)
+			{
+
+				sum *= i;
+			}
+			return sum;
+		};
+
+		int res = func2(1, 2);
+
+		Console.WriteLine(res);
+
 		#endregion
 
 		Console.Read();
