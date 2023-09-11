@@ -29,26 +29,36 @@ public class Program
 
 		#region Action
 
-		Action<string> printHello = PrintHello;
+		//Action<string> printHello = PrintHello;
 
-		printHello("Alfredo");
+		//printHello("Alfredo");
 
-		Action<int, int> add = delegate (int number1, int number2)
-		{
-			Console.WriteLine(number1 + number2);
-		};
+		////Delegate
+		//Action<int, int> add = delegate (int number1, int number2)
+		//{
+		//	Console.WriteLine(number1 + number2);
+		//};
 
-		//Lamda
-		Action<int, int> sub = (int number1, int number2) =>
-		{
-			Console.WriteLine(number1 - number2);
-		};
+		////Lamda
+		//Action<int, int> sub = (int number1, int number2) =>
+		//{
+		//	Console.WriteLine(number1 - number2);
+		//};
 
-		add(1, 29);
-		sub(29, 1);
+		//add(1, 29);
+		//sub(29, 1);
 
 		#endregion
 
+		#region Func
+
+		//Func<int, int, int> func = SumRange;
+
+		//int res = func(1, 2);
+
+		//Console.WriteLine(res);
+
+		#endregion
 
 		Console.Read();
 	}
@@ -66,6 +76,19 @@ public class Program
 	public static void PrintGuid(Guid value)
 	{
 		Console.WriteLine($"Type: {value.GetType()}");
+	}
+
+	public static int SumRange(int rangeInit, int rangeEnd)
+	{
+		int sum = 0;
+
+		for (int i = rangeInit; i <= rangeEnd; i++)
+		{
+			
+			sum += i;
+		}
+
+		return sum;
 	}
 }
 
