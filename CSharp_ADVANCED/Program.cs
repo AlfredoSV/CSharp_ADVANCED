@@ -4,7 +4,6 @@ public class Program
 {
 	/*
 	Delegates
-	Func, Action y Predicate
 	*/
 	public delegate void PrintMessage(string value);
 	public delegate void PrintMessageGeneric<T>(T value);
@@ -26,6 +25,22 @@ public class Program
 		//guid(Guid.NewGuid());
 		#endregion
 
+		//Func, Action, Predicate and Anonymous
+
+		#region Action
+
+		Action<string> printHello = PrintHello;
+
+		printHello("Alfredo");
+
+		Action<int, int> sum = (int number1, int number2) =>
+		{
+			Console.WriteLine(number1 + number2);
+		};
+
+		sum(1, 29);
+
+		#endregion
 
 
 		Console.Read();
