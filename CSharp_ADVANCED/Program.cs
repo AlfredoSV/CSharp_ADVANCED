@@ -58,21 +58,31 @@ public class Program
 
 		//Console.WriteLine(res);
 
-		Func<int, int, int> func2 = delegate (int rangeInit, int rangeEnd){
+		//Func<int, int, int> func2 = delegate (int rangeInit, int rangeEnd){
 
-			int sum = 1;
+		//	int sum = 1;
 
-			for (int i = rangeInit; i <= rangeEnd; i++)
-			{
+		//	for (int i = rangeInit; i <= rangeEnd; i++)
+		//	{
 
-				sum *= i;
-			}
-			return sum;
+		//		sum *= i;
+		//	}
+		//	return sum;
+		//};
+
+		//int res = func2(1, 2);
+
+		//Console.WriteLine(res);
+
+		#endregion
+
+		#region Predicate
+
+		Predicate<int> predicate = delegate (int value) { 
+			return value == 0; 
 		};
 
-		int res = func2(1, 2);
-
-		Console.WriteLine(res);
+		Console.WriteLine(predicate(1));
 
 		#endregion
 
@@ -100,7 +110,7 @@ public class Program
 
 		for (int i = rangeInit; i <= rangeEnd; i++)
 		{
-			
+
 			sum += i;
 		}
 
