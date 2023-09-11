@@ -33,12 +33,19 @@ public class Program
 
 		printHello("Alfredo");
 
-		Action<int, int> sum = (int number1, int number2) =>
+		Action<int, int> add = delegate (int number1, int number2)
 		{
 			Console.WriteLine(number1 + number2);
 		};
 
-		sum(1, 29);
+		//Lamda
+		Action<int, int> sub = (int number1, int number2) =>
+		{
+			Console.WriteLine(number1 - number2);
+		};
+
+		add(1, 29);
+		sub(29, 1);
 
 		#endregion
 
