@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp_ADVANCED_Delegates", "CSharp_ADVANCED\CSharp_ADVANCED_Delegates.csproj", "{6C7EFBD7-5A91-4E4D-9CF2-D743A21C7BF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp_ADVANCED_Delegates", "CSharp_ADVANCED\CSharp_ADVANCED_Delegates.csproj", "{6C7EFBD7-5A91-4E4D-9CF2-D743A21C7BF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp_ADVANCED_CompareObjects", "CSharp_ADVANCED_CompareObjects\CSharp_ADVANCED_CompareObjects.csproj", "{6E9EB8CE-8D85-4176-9179-C01B3CBAE208}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{6C7EFBD7-5A91-4E4D-9CF2-D743A21C7BF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C7EFBD7-5A91-4E4D-9CF2-D743A21C7BF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C7EFBD7-5A91-4E4D-9CF2-D743A21C7BF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E9EB8CE-8D85-4176-9179-C01B3CBAE208}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E9EB8CE-8D85-4176-9179-C01B3CBAE208}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E9EB8CE-8D85-4176-9179-C01B3CBAE208}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E9EB8CE-8D85-4176-9179-C01B3CBAE208}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
